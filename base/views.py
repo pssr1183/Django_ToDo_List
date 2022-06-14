@@ -93,4 +93,3 @@ class DeleteView(LoginRequiredMixin, DeleteView):
     def get_queryset(self):
         owner = self.request.user
         return self.model.objects.filter(user=owner)
-
